@@ -16,6 +16,10 @@
 		0DACD6EE286304CB00008C6E /* AnthillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACD6ED286304CB00008C6E /* AnthillTests.swift */; };
 		0DACD6F8286304CB00008C6E /* AnthillUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACD6F7286304CB00008C6E /* AnthillUITests.swift */; };
 		0DACD6FA286304CB00008C6E /* AnthillUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACD6F9286304CB00008C6E /* AnthillUITestsLaunchTests.swift */; };
+		0DACD707286306BB00008C6E /* ServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACD706286306BB00008C6E /* ServerModel.swift */; };
+		0DACD70B2863070500008C6E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACD70A2863070500008C6E /* SignUpViewController.swift */; };
+		0DACD70E2863071B00008C6E /* AuthView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DACD70D2863071B00008C6E /* AuthView.storyboard */; };
+		0DACD7102863081400008C6E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACD70F2863081400008C6E /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		0DACD6F3286304CB00008C6E /* AnthillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnthillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DACD6F7286304CB00008C6E /* AnthillUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnthillUITests.swift; sourceTree = "<group>"; };
 		0DACD6F9286304CB00008C6E /* AnthillUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnthillUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0DACD706286306BB00008C6E /* ServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerModel.swift; sourceTree = "<group>"; };
+		0DACD70A2863070500008C6E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0DACD70D2863071B00008C6E /* AuthView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthView.storyboard; sourceTree = "<group>"; };
+		0DACD70F2863081400008C6E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				0DACD6D6286304CA00008C6E /* AppDelegate.swift */,
+				0DACD706286306BB00008C6E /* ServerModel.swift */,
 				0DACD6D8286304CA00008C6E /* SceneDelegate.swift */,
-				0DACD6DA286304CA00008C6E /* ViewController.swift */,
-				0DACD6DC286304CA00008C6E /* Main.storyboard */,
+				0DACD70C2863070C00008C6E /* View */,
+				0DACD709286306F200008C6E /* ViewController */,
 				0DACD6DF286304CB00008C6E /* Assets.xcassets */,
 				0DACD6E1286304CB00008C6E /* LaunchScreen.storyboard */,
 				0DACD6E4286304CB00008C6E /* Info.plist */,
@@ -125,6 +134,25 @@
 				0DACD6F9286304CB00008C6E /* AnthillUITestsLaunchTests.swift */,
 			);
 			path = AnthillUITests;
+			sourceTree = "<group>";
+		};
+		0DACD709286306F200008C6E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0DACD6DA286304CA00008C6E /* ViewController.swift */,
+				0DACD70A2863070500008C6E /* SignUpViewController.swift */,
+				0DACD70F2863081400008C6E /* SignInViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0DACD70C2863070C00008C6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0DACD6DC286304CA00008C6E /* Main.storyboard */,
+				0DACD70D2863071B00008C6E /* AuthView.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +262,7 @@
 				0DACD6E3286304CB00008C6E /* LaunchScreen.storyboard in Resources */,
 				0DACD6E0286304CB00008C6E /* Assets.xcassets in Resources */,
 				0DACD6DE286304CA00008C6E /* Main.storyboard in Resources */,
+				0DACD70E2863071B00008C6E /* AuthView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DACD707286306BB00008C6E /* ServerModel.swift in Sources */,
 				0DACD6DB286304CA00008C6E /* ViewController.swift in Sources */,
+				0DACD7102863081400008C6E /* SignInViewController.swift in Sources */,
 				0DACD6D7286304CA00008C6E /* AppDelegate.swift in Sources */,
 				0DACD6D9286304CA00008C6E /* SceneDelegate.swift in Sources */,
+				0DACD70B2863070500008C6E /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
