@@ -8,25 +8,75 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-    
     static let identifier = "SignUpViewController"
     static let storyboard = "AuthView"
+    
+    // Labels
+    @IBOutlet weak var validIdLabel: UILabel!
+    @IBOutlet weak var validNicknameLabel: UILabel!
+    @IBOutlet weak var validPhoneLabel: UILabel!
 
+    // TextFields
+    @IBOutlet var idField: UITextField!
+    @IBOutlet var nicknameField: UITextField!
+    @IBOutlet var passwordField: UITextField!
+    @IBOutlet var confirmPasswordField: UITextField!
+    
+    @IBOutlet var userNameField: UITextField!
+    @IBOutlet var phoneField: UITextField!
+    @IBOutlet var mainAddressField: UITextField!
+    @IBOutlet var detailAddressField: UITextField!
+    
+    // Buttons
+    @IBOutlet weak var validIdButton: UIButton!
+    @IBOutlet weak var validNicknameButton: UIButton!
+    @IBOutlet weak var validPhoneButton: UIButton!
+    
+    @IBOutlet weak var findAddressButton: UIButton!
+    @IBOutlet weak var signUpDoneButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
 
-        // Do any additional setup after loading the view.
+}
+
+// MARK: - IBActions
+
+extension SignUpViewController {
+    @IBAction func onTappedValidIdButton(_ sender: Any) {
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func onTappedValidNicknameButton(_ sender: Any) {
     }
-    */
+    
+    @IBAction func onTappedValidPhoneButton(_ sender: Any) {
+    }
+    
+    @IBAction func onTappedFindAddressButton(_ sender: Any) {
+    }
+    
+    @IBAction func onTappedSignUpDoneButton(_ sender: Any) {
+    }
+}
 
+
+// MARK: - API Requests
+
+extension SignUpViewController {
+    private func validId() {
+        
+    }
+    
+    private func validNickname() {
+        
+    }
+    
+    private func validPhone() {
+        
+    }
+    
+    private func signUpDone() {
+        
+    }
 }

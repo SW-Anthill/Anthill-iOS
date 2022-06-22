@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -37,12 +37,18 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwf-nK-omh">
-                                                <rect key="frame" x="314" y="65.5" width="80" height="31"/>
+                                                <rect key="frame" x="314" y="61" width="80" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="51b-kP-r6O"/>
+                                                    <constraint firstAttribute="height" constant="40" id="d8d-np-SmA"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="중복확인"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="중복확인">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onTappedValidIdButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Zjk-nG-JMm"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="중복확인이 필요합니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QY5-wY-5ok">
                                                 <rect key="frame" x="20" y="106" width="125" height="17"/>
@@ -65,12 +71,18 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cam-E5-ILw">
-                                                <rect key="frame" x="314" y="181.5" width="80" height="31"/>
+                                                <rect key="frame" x="314" y="177" width="80" height="40"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="K0B-fl-wbA"/>
                                                     <constraint firstAttribute="width" constant="80" id="pfP-Wc-0sU"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="중복확인"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="중복확인">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onTappedValidNicknameButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xIZ-QP-ulr"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="중복확인이 필요합니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76y-Fp-V0q">
                                                 <rect key="frame" x="20" y="222" width="125" height="17"/>
@@ -103,11 +115,11 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="개인정보 입력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRF-Iq-Rg4">
                                                 <rect key="frame" x="20" y="410" width="374" height="23"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.9137254901960784" green="0.33725490196078434" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAT-fG-k5f">
-                                                <rect key="frame" x="20" y="443" width="374" height="47"/>
+                                                <rect key="frame" x="20" y="443" width="374" height="46.666666666666686"/>
                                                 <string key="text">신뢰성 있는 지역 기반 서비스를 위해 
 Anthill 은 사용자의 개인정보를 제공받습니다. 
 자세한 사항은 개인정보 처리방침에서 확인하실 수 있습니다.  </string>
@@ -116,13 +128,13 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrX-ey-fhJ">
-                                                <rect key="frame" x="20" y="510" width="374" height="21"/>
+                                                <rect key="frame" x="20" y="509.66666666666674" width="374" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XnZ-w4-wgw">
-                                                <rect key="frame" x="20" y="541" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="540.66666666666663" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Rex-oH-edH"/>
                                                 </constraints>
@@ -130,13 +142,13 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qf3-zR-WfA">
-                                                <rect key="frame" x="20" y="607" width="374" height="21"/>
+                                                <rect key="frame" x="20" y="606.66666666666663" width="374" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gOj-OX-Jrf">
-                                                <rect key="frame" x="20" y="638" width="284" height="40"/>
+                                                <rect key="frame" x="20" y="637.66666666666663" width="284" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="CB3-eN-eRE"/>
                                                 </constraints>
@@ -144,27 +156,33 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTb-wL-JCe">
-                                                <rect key="frame" x="314" y="642.5" width="80" height="31"/>
+                                                <rect key="frame" x="314" y="637.66666666666663" width="80" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="6jb-Uz-h5p"/>
+                                                    <constraint firstAttribute="height" constant="40" id="Nn9-Jf-mrK"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="중복확인"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="중복확인">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onTappedValidPhoneButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yMa-26-FIb"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="중복확인이 필요합니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgL-vN-O7M">
-                                                <rect key="frame" x="20" y="683" width="125" height="17"/>
+                                                <rect key="frame" x="20" y="682.66666666666663" width="125" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbr-KQ-s0u">
-                                                <rect key="frame" x="20" y="712" width="374" height="21"/>
+                                                <rect key="frame" x="20" y="711.66666666666663" width="374" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5w-BG-GHY">
-                                                <rect key="frame" x="20" y="741" width="324" height="40"/>
+                                                <rect key="frame" x="20" y="740.66666666666663" width="324" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="LWI-nZ-9BB"/>
                                                 </constraints>
@@ -172,7 +190,7 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ3-fT-fRx">
-                                                <rect key="frame" x="20" y="786" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="785.66666666666663" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="P4Y-lH-eFQ"/>
                                                 </constraints>
@@ -191,15 +209,21 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <connections>
+                                                    <action selector="onTappedSignUpDoneButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="es3-gH-wQb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILm-fs-iuo">
-                                                <rect key="frame" x="354" y="741" width="40" height="40"/>
+                                                <rect key="frame" x="354" y="740.66666666666663" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="Yve-J4-Wzf"/>
                                                     <constraint firstAttribute="height" constant="40" id="p89-KE-ofh"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="tinted" image="magnifyingglass" catalog="system"/>
+                                                <connections>
+                                                    <action selector="onTappedFindAddressButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rPf-BH-6xb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -224,7 +248,6 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                             <constraint firstItem="Pt8-wl-jix" firstAttribute="trailing" secondItem="6Uu-RS-jvN" secondAttribute="trailing" id="FoA-ZG-c2r"/>
                                             <constraint firstItem="SaI-sD-o4p" firstAttribute="trailing" secondItem="pEb-iX-msS" secondAttribute="trailing" id="GIW-BC-mH3"/>
                                             <constraint firstItem="TYa-ZD-H93" firstAttribute="leading" secondItem="ZJ3-fT-fRx" secondAttribute="leading" id="HcI-Mo-dwV"/>
-                                            <constraint firstItem="TYa-ZD-H93" firstAttribute="top" secondItem="ZJ3-fT-fRx" secondAttribute="bottom" constant="20" id="HmA-hr-ig4"/>
                                             <constraint firstItem="QY5-wY-5ok" firstAttribute="leading" secondItem="9XN-Ij-Zer" secondAttribute="leading" id="IEC-Jy-noF"/>
                                             <constraint firstItem="qf3-zR-WfA" firstAttribute="trailing" secondItem="CrX-ey-fhJ" secondAttribute="trailing" id="JZV-Cd-PHZ"/>
                                             <constraint firstItem="vwf-nK-omh" firstAttribute="trailing" secondItem="6Uu-RS-jvN" secondAttribute="trailing" id="L2Y-fv-Fz7"/>
@@ -250,6 +273,7 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                             <constraint firstItem="XnZ-w4-wgw" firstAttribute="leading" secondItem="CrX-ey-fhJ" secondAttribute="leading" id="feV-dt-7D5"/>
                                             <constraint firstItem="KAT-fG-k5f" firstAttribute="trailing" secondItem="bRF-Iq-Rg4" secondAttribute="trailing" id="fww-sf-eXC"/>
                                             <constraint firstItem="qfR-5Y-x7e" firstAttribute="leading" secondItem="ZJ3-fT-fRx" secondAttribute="leading" id="gDV-RB-5sy"/>
+                                            <constraint firstItem="TYa-ZD-H93" firstAttribute="top" secondItem="ZJ3-fT-fRx" secondAttribute="bottom" constant="20.333333333333371" id="gdy-Nm-ybU"/>
                                             <constraint firstItem="XnZ-w4-wgw" firstAttribute="trailing" secondItem="CrX-ey-fhJ" secondAttribute="trailing" id="iYT-mI-dm2"/>
                                             <constraint firstItem="lbr-KQ-s0u" firstAttribute="top" secondItem="TgL-vN-O7M" secondAttribute="bottom" constant="12" id="ial-9O-nt5"/>
                                             <constraint firstItem="qf3-zR-WfA" firstAttribute="leading" secondItem="CrX-ey-fhJ" secondAttribute="leading" id="jtY-dY-mlu"/>
@@ -297,36 +321,54 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="confirmPasswordField" destination="SaI-sD-o4p" id="gKg-mk-KN7"/>
+                        <outlet property="detailAddressField" destination="ZJ3-fT-fRx" id="W3C-gx-ff1"/>
+                        <outlet property="findAddressButton" destination="ILm-fs-iuo" id="RcW-Uz-8Pr"/>
+                        <outlet property="idField" destination="9XN-Ij-Zer" id="tcA-sq-0Do"/>
+                        <outlet property="mainAddressField" destination="X5w-BG-GHY" id="4dW-Dd-Z5F"/>
+                        <outlet property="nicknameField" destination="zQJ-7P-gvx" id="7oB-Ks-ObV"/>
+                        <outlet property="passwordField" destination="pEb-iX-msS" id="dka-y3-rbb"/>
+                        <outlet property="phoneField" destination="gOj-OX-Jrf" id="BtY-MB-7LK"/>
+                        <outlet property="signUpDoneButton" destination="qfR-5Y-x7e" id="eOg-sQ-BwJ"/>
+                        <outlet property="userNameField" destination="XnZ-w4-wgw" id="DLC-Cp-ziZ"/>
+                        <outlet property="validIdButton" destination="vwf-nK-omh" id="rl2-au-lR2"/>
+                        <outlet property="validIdLabel" destination="QY5-wY-5ok" id="jtn-NM-6K0"/>
+                        <outlet property="validNicknameButton" destination="Cam-E5-ILw" id="Tfx-e1-mS4"/>
+                        <outlet property="validNicknameLabel" destination="76y-Fp-V0q" id="hDs-Bz-jsa"/>
+                        <outlet property="validPhoneButton" destination="aTb-wL-JCe" id="Fbv-qI-Vnb"/>
+                        <outlet property="validPhoneLabel" destination="TgL-vN-O7M" id="p1x-gj-acT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.57971014492756" y="239.73214285714283"/>
+            <point key="canvasLocation" x="182" y="193"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="mka-SD-BaT">
             <objects>
                 <viewController storyboardIdentifier="SignInViewController" id="r6t-TV-sYN" customClass="SignInViewController" customModule="Anthill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oVB-JT-ua1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anthill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWB-NJ-4Ac">
-                                <rect key="frame" x="20" y="194" width="374" height="60"/>
+                                <rect key="frame" x="20" y="194" width="350" height="60"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78u-uF-ucX">
-                                <rect key="frame" x="20" y="324" width="374" height="290.5"/>
+                                <rect key="frame" x="20" y="324" width="350" height="290.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1a-AM-LAD">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wEP-DR-kdb">
-                                        <rect key="frame" x="0.0" y="26" width="374" height="40"/>
+                                        <rect key="frame" x="0.0" y="26" width="350" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="dWp-aJ-7bz"/>
                                         </constraints>
@@ -334,13 +376,13 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="su2-ll-nlW">
-                                        <rect key="frame" x="0.0" y="86" width="374" height="21"/>
+                                        <rect key="frame" x="0.0" y="86" width="350" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UcP-A9-8fE">
-                                        <rect key="frame" x="0.0" y="112" width="374" height="40"/>
+                                        <rect key="frame" x="0.0" y="112" width="350" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="3Gh-yf-gUD"/>
                                         </constraints>
@@ -348,7 +390,7 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCm-qc-uyS">
-                                        <rect key="frame" x="0.0" y="202" width="374" height="45"/>
+                                        <rect key="frame" x="0.0" y="202" width="350" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="pxd-Or-ESe"/>
                                         </constraints>
@@ -361,7 +403,7 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UgD-FI-y8h">
-                                        <rect key="frame" x="30" y="257" width="314" height="33.5"/>
+                                        <rect key="frame" x="30" y="257" width="290" height="33.666666666666686"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="아직 계정이 없으신가요?">
                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
