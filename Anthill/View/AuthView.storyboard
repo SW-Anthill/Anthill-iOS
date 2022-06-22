@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BE3-BC-CW3">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1017"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uu-RS-jvN">
                                                 <rect key="frame" x="20" y="30" width="374" height="21"/>
@@ -102,7 +102,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="gVD-zD-OUs"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SaI-sD-o4p">
                                                 <rect key="frame" x="20" y="340" width="374" height="40"/>
@@ -110,16 +110,16 @@
                                                     <constraint firstAttribute="height" constant="40" id="Hp8-Er-NDW"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="개인정보 입력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRF-Iq-Rg4">
-                                                <rect key="frame" x="20" y="410" width="374" height="23"/>
+                                                <rect key="frame" x="20" y="427" width="374" height="23"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                                 <color key="textColor" red="0.9137254901960784" green="0.33725490196078434" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAT-fG-k5f">
-                                                <rect key="frame" x="20" y="443" width="374" height="46.666666666666686"/>
+                                                <rect key="frame" x="20" y="460" width="374" height="46.666666666666686"/>
                                                 <string key="text">신뢰성 있는 지역 기반 서비스를 위해 
 Anthill 은 사용자의 개인정보를 제공받습니다. 
 자세한 사항은 개인정보 처리방침에서 확인하실 수 있습니다.  </string>
@@ -128,13 +128,13 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrX-ey-fhJ">
-                                                <rect key="frame" x="20" y="509.66666666666674" width="374" height="21"/>
+                                                <rect key="frame" x="20" y="526.66666666666663" width="374" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XnZ-w4-wgw">
-                                                <rect key="frame" x="20" y="540.66666666666663" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="557.66666666666663" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Rex-oH-edH"/>
                                                 </constraints>
@@ -142,13 +142,13 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qf3-zR-WfA">
-                                                <rect key="frame" x="20" y="606.66666666666663" width="374" height="21"/>
+                                                <rect key="frame" x="20" y="623.66666666666663" width="374" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gOj-OX-Jrf">
-                                                <rect key="frame" x="20" y="637.66666666666663" width="284" height="40"/>
+                                                <rect key="frame" x="20" y="654.66666666666663" width="284" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="CB3-eN-eRE"/>
                                                 </constraints>
@@ -156,7 +156,7 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTb-wL-JCe">
-                                                <rect key="frame" x="314" y="637.66666666666663" width="80" height="40"/>
+                                                <rect key="frame" x="314" y="654.66666666666663" width="80" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="6jb-Uz-h5p"/>
                                                     <constraint firstAttribute="height" constant="40" id="Nn9-Jf-mrK"/>
@@ -170,19 +170,19 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="중복확인이 필요합니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgL-vN-O7M">
-                                                <rect key="frame" x="20" y="682.66666666666663" width="125" height="17"/>
+                                                <rect key="frame" x="20" y="699.66666666666663" width="125" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbr-KQ-s0u">
-                                                <rect key="frame" x="20" y="711.66666666666663" width="374" height="21"/>
+                                                <rect key="frame" x="20" y="728.66666666666663" width="374" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5w-BG-GHY">
-                                                <rect key="frame" x="20" y="740.66666666666663" width="324" height="40"/>
+                                                <rect key="frame" x="20" y="757.66666666666663" width="324" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="LWI-nZ-9BB"/>
                                                 </constraints>
@@ -190,7 +190,7 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ3-fT-fRx">
-                                                <rect key="frame" x="20" y="785.66666666666663" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="802.66666666666663" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="P4Y-lH-eFQ"/>
                                                 </constraints>
@@ -198,12 +198,12 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYa-ZD-H93">
-                                                <rect key="frame" x="20" y="846" width="234" height="31"/>
+                                                <rect key="frame" x="20" y="863" width="234" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="checkmark.square" catalog="system" title="앱 이용약관 및 개인정보 제공 동의"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfR-5Y-x7e">
-                                                <rect key="frame" x="20" y="906" width="374" height="45"/>
+                                                <rect key="frame" x="20" y="923" width="374" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="UM8-UU-tIJ"/>
                                                 </constraints>
@@ -214,7 +214,7 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILm-fs-iuo">
-                                                <rect key="frame" x="354" y="740.66666666666663" width="40" height="40"/>
+                                                <rect key="frame" x="354" y="757.66666666666663" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="Yve-J4-Wzf"/>
                                                     <constraint firstAttribute="height" constant="40" id="p89-KE-ofh"/>
@@ -225,6 +225,12 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                                     <action selector="onTappedFindAddressButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rPf-BH-6xb"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 확인해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NU7-4J-uvA">
+                                                <rect key="frame" x="20" y="385" width="374" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -237,14 +243,17 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                             <constraint firstItem="76y-Fp-V0q" firstAttribute="top" secondItem="zQJ-7P-gvx" secondAttribute="bottom" constant="5" id="36G-P7-nZO"/>
                                             <constraint firstItem="lbr-KQ-s0u" firstAttribute="trailing" secondItem="qf3-zR-WfA" secondAttribute="trailing" id="3mC-VQ-cln"/>
                                             <constraint firstItem="SaI-sD-o4p" firstAttribute="top" secondItem="pEb-iX-msS" secondAttribute="bottom" constant="5" id="4lI-5O-A6E"/>
+                                            <constraint firstItem="NU7-4J-uvA" firstAttribute="top" secondItem="SaI-sD-o4p" secondAttribute="bottom" constant="5" id="5WO-Gc-2xM"/>
                                             <constraint firstItem="TgL-vN-O7M" firstAttribute="top" secondItem="gOj-OX-Jrf" secondAttribute="bottom" constant="5" id="60I-et-EO5"/>
                                             <constraint firstItem="X5w-BG-GHY" firstAttribute="leading" secondItem="lbr-KQ-s0u" secondAttribute="leading" id="6Yh-BL-NMM"/>
                                             <constraint firstItem="Spt-za-wyt" firstAttribute="leading" secondItem="Pt8-wl-jix" secondAttribute="leading" id="6ZC-mR-SeP"/>
+                                            <constraint firstItem="bRF-Iq-Rg4" firstAttribute="top" secondItem="NU7-4J-uvA" secondAttribute="bottom" constant="25" id="6cf-eB-7iP"/>
                                             <constraint firstAttribute="bottom" secondItem="qfR-5Y-x7e" secondAttribute="bottom" constant="49" id="6j7-OV-itd"/>
                                             <constraint firstItem="9XN-Ij-Zer" firstAttribute="leading" secondItem="6Uu-RS-jvN" secondAttribute="leading" id="9gM-Oc-5GA"/>
                                             <constraint firstItem="Cam-E5-ILw" firstAttribute="trailing" secondItem="Pt8-wl-jix" secondAttribute="trailing" id="AGg-7E-qDp"/>
-                                            <constraint firstItem="bRF-Iq-Rg4" firstAttribute="top" secondItem="SaI-sD-o4p" secondAttribute="bottom" constant="30" id="CiH-iX-x0Y"/>
+                                            <constraint firstItem="NU7-4J-uvA" firstAttribute="leading" secondItem="SaI-sD-o4p" secondAttribute="leading" id="CZf-Wm-lAZ"/>
                                             <constraint firstItem="qf3-zR-WfA" firstAttribute="top" secondItem="XnZ-w4-wgw" secondAttribute="bottom" constant="26" id="E0E-dV-JBa"/>
+                                            <constraint firstItem="NU7-4J-uvA" firstAttribute="trailing" secondItem="SaI-sD-o4p" secondAttribute="trailing" id="FDa-mY-h3Y"/>
                                             <constraint firstItem="Pt8-wl-jix" firstAttribute="trailing" secondItem="6Uu-RS-jvN" secondAttribute="trailing" id="FoA-ZG-c2r"/>
                                             <constraint firstItem="SaI-sD-o4p" firstAttribute="trailing" secondItem="pEb-iX-msS" secondAttribute="trailing" id="GIW-BC-mH3"/>
                                             <constraint firstItem="TYa-ZD-H93" firstAttribute="leading" secondItem="ZJ3-fT-fRx" secondAttribute="leading" id="HcI-Mo-dwV"/>
@@ -323,6 +332,7 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="confirmPasswordField" destination="SaI-sD-o4p" id="gKg-mk-KN7"/>
+                        <outlet property="confirmPasswordLabel" destination="NU7-4J-uvA" id="mn4-Ez-v0s"/>
                         <outlet property="detailAddressField" destination="ZJ3-fT-fRx" id="W3C-gx-ff1"/>
                         <outlet property="findAddressButton" destination="ILm-fs-iuo" id="RcW-Uz-8Pr"/>
                         <outlet property="idField" destination="9XN-Ij-Zer" id="tcA-sq-0Do"/>
