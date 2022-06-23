@@ -458,6 +458,10 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                             <constraint firstItem="ZWB-NJ-4Ac" firstAttribute="leading" secondItem="Xwe-3K-Jc8" secondAttribute="leading" constant="20" id="vpQ-QM-kBR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="idField" destination="wEP-DR-kdb" id="j0S-Wf-QaQ"/>
+                        <outlet property="passwordField" destination="UcP-A9-8fE" id="Zoz-17-wBA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hps-9w-GmT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
