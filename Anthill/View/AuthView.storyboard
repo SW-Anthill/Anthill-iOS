@@ -397,7 +397,7 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                             <constraint firstAttribute="height" constant="40" id="3Gh-yf-gUD"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCm-qc-uyS">
                                         <rect key="frame" x="0.0" y="202" width="350" height="45"/>
