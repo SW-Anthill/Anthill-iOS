@@ -69,7 +69,7 @@ extension SignInViewController {
         ]
 
         AF.request(
-            Server.url + "members",
+            Server.url + "members/login",
             method: .post,
             parameters: params as Parameters,
             encoding: JSONEncoding.default
@@ -81,7 +81,14 @@ extension SignInViewController {
             }
             
             if response.response?.statusCode == 200 {
-                // 로그인 완료
+                // UserDefaults 설정
+                UserDefaults.standard.set(self.idField.text, forKey: "userId")
+                
+                // root View 전환
+                let window = self.view.window
+                let protectedPage = RootInfo.rootToHomeView()
+                window?.rootViewController = protectedPage
+                window?.makeKeyAndVisible()
             }
         }
     }
