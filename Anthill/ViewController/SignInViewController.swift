@@ -89,6 +89,8 @@ extension SignInViewController {
                 let protectedPage = RootInfo.rootToHomeView()
                 window?.rootViewController = protectedPage
                 window?.makeKeyAndVisible()
+            } else {
+                self.failureAlert()
             }
         }
     }

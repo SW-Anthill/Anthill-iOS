@@ -208,7 +208,7 @@ Anthill 은 사용자의 개인정보를 제공받습니다.
                                                     <constraint firstAttribute="height" constant="45" id="UM8-UU-tIJ"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="회원가입"/>
                                                 <connections>
                                                     <action selector="onTappedSignUpDoneButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="es3-gH-wQb"/>
                                                 </connections>
